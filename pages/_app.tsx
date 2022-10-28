@@ -6,7 +6,7 @@ import 'prism-themes/themes/prism-shades-of-purple.css';
 import 'focus-visible/dist/focus-visible';
 import { roadmapTheme } from '../styles/theme';
 import { firePageView } from '../lib/gtag';
-import { StickyBanner } from '../components/sticky-banner';
+
 
 const GlobalStyles = css`
   /*
@@ -60,7 +60,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={roadmapTheme}>
       <Global styles={GlobalStyles} />
-      <StickyBanner />
+  
       <Component {...pageProps} />
     </ChakraProvider>
   );
